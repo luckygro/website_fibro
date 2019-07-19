@@ -8,6 +8,10 @@ body {
 
 /* == Colors == */
 $white: #fff; 
+$accent1: #4592cf;
+$gray1: #ebf0f0;
+$gray2: #bbb;
+$gray3: #444;
 
 /* == Font Size == */
 $fontsize-big: 16pt;
@@ -19,6 +23,18 @@ $fontsize-big: 16pt;
 	width: 90%;
 	max-width: 1400px;
 	margin: 0px auto;
+}
+
+.hr:before {
+    content: " ";
+    border: 3px solid $accent1;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: block;
+    max-width: 100px;
+}
+.hr {
+	margin-bottom: 60px;
 }
 
 
@@ -72,17 +88,75 @@ $fontsize-big: 16pt;
 		left: 0;
 		right: 0;
 		bottom: 100px;
-		h1, hr, h3 {
+		h1, h3 {
 			color: $white;
 		}
-		hr {
-			width: 33%;
-			border: none;
-			height: 5px;
-			background-color: $white;
+		h3:before {
+			border: 3px solid $white;
+			max-width: 200px;
 		}
 	}
 
+
+}
+
+#Content {
+
+	section {
+		overflow-y: hidden;
+		padding: 80px 0;
+
+		&:nth-child(2n) {
+			background-color: $gray1;
+		}
+	}
+	
+
+	h1, h2, h3 {
+		color: $accent1;
+	}
+
+	#Story {
+		img {
+			float: left;
+			width: 60%;
+			max-width: 700px;
+		}
+
+		.story-content {
+			float: left;
+			width: 35%;
+			padding-left: 5%;
+		}
+	}
+
+}
+
+#Contact {
+	overflow-y: hidden;
+	padding: 80px 0;
+	background-color: $gray3;
+
+	.hr:before {
+		border-color: $white;
+	}
+
+	h1, h2, h3, p {
+		color: $white;
+	}
+
+	.contact-item {
+		width: 50%;
+		float: left;
+		margin-top: 20px;
+		i, svg, span, a {
+			color: $white;
+			text-decoration: none;
+		}
+		span, a {
+			margin-left: 1em;
+		}
+	}
 
 }
 

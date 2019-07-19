@@ -14,7 +14,7 @@ class Header extends Component {
     return (
       <div id="Eyecatcher" style={bgImage} >
 
-        <div id="Navbar" className="container">
+        <header id="Navbar" className="container">
 
           <div id="Logo">
             <a href="/">
@@ -24,19 +24,18 @@ class Header extends Component {
           <nav>
             <ul>
               <li><a href="#">home</a></li>
-              <li><a href="#">our company</a></li>
-              <li><a href="#">our properties</a></li>
-              <li><a href="#">our services</a></li>
-              <li><a href="#">our story</a></li>
-              <li><a href="#">contact</a></li>
+              <li><a href="#Company">our company</a></li>
+              <li><a href="#Properties">our properties</a></li>
+              <li><a href="#Services">our services</a></li>
+              <li><a href="#Story">our story</a></li>
+              <li><a href="#Contact">contact</a></li>
             </ul>
           </nav>
-        </div>
+        </header>
 
         <div id="Slogan" className="container">
           <h1>fibro - room for your life</h1>
-          <hr align="left"/>
-          <h3>Welcome on our homepage!<br />
+          <h3 className="hr">Welcome on our homepage!<br />
               We are a family business focusing on real estate<br />
               investments in the Okanagen Valley.
           </h3>
