@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import Company from "./Company";
+
 import imgstory from "../img/family.jpg";
 
 class Content extends Component {
@@ -7,12 +9,7 @@ class Content extends Component {
     return (
       <div id="Content">
 
-        <section id="Company">
-          <div className="container">
-            <h2 className="hr">our company</h2>
-            <p>some content</p>
-          </div>
-        </section>
+        <Company />
 
         <section id="Properties">
           <div className="container">

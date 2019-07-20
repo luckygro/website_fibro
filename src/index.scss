@@ -9,6 +9,7 @@ body {
 /* == Colors == */
 $white: #fff; 
 $accent1: #4592cf;
+$accent2: #3b609d;
 $gray1: #ebf0f0;
 $gray2: #bbb;
 $gray3: #444;
@@ -114,6 +115,31 @@ $fontsize-big: 16pt;
 
 	h1, h2, h3 {
 		color: $accent1;
+	}
+
+
+	#Company {
+
+		ul {
+			list-style-type: none;
+		}
+
+		li {
+
+			width: 33.3%;
+			float: left;
+			text-align: center;
+			h4, h5 {
+				color: $accent1;
+			}
+			h4 {
+				text-transform: uppercase;
+			}
+			span {
+				color: $accent2;
+
+			}
+		}
 	}
 
 	#Story {
